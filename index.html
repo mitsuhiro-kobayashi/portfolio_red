@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Fuyuko Matsui|ふゆこ松井|Web Application Developer</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#"><img src="img/home.png" alt="home">Home</a></li>
-                <li><a href="#"><img src="img/about.png" alt="about">About</a></li>
-                <li><a href="#"><img src="img/projects.png" alt="projects">Projects</a></li>
+                <li><a href="index.html"><img src="img/home.png" alt="home">Home</a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html#about"><img src="img/about.png" alt="about">About</a></li>
+                <li><a href="#project"><img src="img/projects.png" alt="projects">Projects</a></li>
             </ul>
         </nav>
-        <h1>
-            Fuyuko<br>
-            Matsui
-        </h1>
-        <p>ふゆこ松井</p>
-        <p>Web Application Developer</p>
+        <!-- <div class="header-contents"> -->
+            <div class="firstview">
+                <h1>Fuyuko<br>Matsui</h1>
+                <p>ふゆこ松井</p>
+                <p>Web Application Developer</p>
+            </div>
+        <!-- </div>  -->
     </header>
     <main>
         <section id="about">
             <div class="about-contents">
                 <h2>About</h2>
-                <p>
+                <img  src="img/グループ 18.png" alt="line">
+                <p class="about-txt">
                     HTML / CSS / JavaScript / React JS / Redux / Python / Django / ExpressJS / 
                     AWS(basic) / Docker(basic)
                 </p>
@@ -43,50 +48,63 @@
         </section>
         <section id="projects">
             <h2>Projects</h2>
-            <div class="projects-card">
-                <img src="img/twitter-project.png" alt="twitterクローン">
-                <h3>Twitterクローン</h3>
-                <p>
-                    Twitterの複製アプリです。ツイートを投稿できます。
-                    PHP / MySQLを利用しています。
-                </p>
-                <p>テストアカウント</p>
-               <p> Email : Test@gmail.com </p>
-                <p>Pass : 123456</p>
-                <p class="project-links"><a href="#" target="_blank"></a>WebSite</p>
-                <p class="project-links"><a href="#" target="_blank">GitHub</a></p>
-            </div>
-            <div class="projects-card">
-                <img src="img/netflix.png" alt="Netflixクローン">
-               <h3> Netflixクローン</h3>
-                <p>
-                    Netflixの複製サービスです。
-                    Laravel / MySQLを利用しています。
-                </p>
-                <p>テストアカウント</p>
-                <p>Email : Test@gmail.com </p>
-                <p>Pass : 123456</p>
-                <p class="project-links"><a href="#" target="_blank"></a>WebSite</p>
-                <p class="project-links"><a href="#" target="_blank">GitHub</a></p>
+            <img src="img/グループ 18.png" alt="line">
+            <div class="projects-cards">
+                <div class="projects-card">
+                    <img src="img/twitter-project.png" alt="twitterクローン">
+                    <h3>Twitterクローン</h3>
+                    <p>
+                        Twitterの複製アプリです。ツイートを投稿できます。<br>
+                        PHP / MySQLを利用しています。
+                    </p>
+                    <p>テストアカウント</p>
+                    <p> Email : Test@gmail.com </p>
+                    <p>Pass : 123456</p>
+                    <div class="projects-links">
+                        <p class="projects-link"><a href="#" target="_blank"></a>WebSite</p>
+                        <p class="projects-link"><a href="#" target="_blank"></a>GitHub</p>
+                    </div>
+                </div>
+                <div class="projects-card">
+                    <img src="img/netflix.png" alt="Netflixクローン">
+                    <h3> Netflixクローン</h3>
+                    <p>
+                        Netflixの複製サービスです。<br>
+                        Laravel / MySQLを利用しています。
+                    </p>
+                    <p>テストアカウント</p>
+                    <p>Email : Test@gmail.com </p>
+                    <p>Pass : 123456</p>
+                    <div class="projects-links">
+                        <p class="projects-link"><a href="#" target="_blank"></a>WebSite</p>
+                        <p class="projects-link"><a href="#" target="_blank"></a>GitHub</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="contact">
             <h2>
                 Contact <span class="color-red">Me</span>
             </h2>
-            <div class="contact-card">
-                <img src="img/phone.png" alt="phone">
-                <p>PHONE</p>
-                <p>+12 345 6789</p>
-            </div>
-            <div class="contact-card">
-                <img src="img/mail.png" alt="mail">
-                <p>EMAIL</p>
-                <p>support@techis.com</p>
+            <div class="contact-cads">
+                <div class="contact-card">
+                    <img src="img/phone.png" alt="phone">
+                    <h3>PHONE</h3>
+                    <p>+12 345 6789</p>
+                </div>
+                <div class="contact-card">
+                    <img src="img/mail.png" alt="mail">
+                    <h3>EMAIL</h3>
+                    <p><a href="mailto:">support@techis.com</a></p>
+                </div>
             </div>
         </section>
     </main>
-    <footer>© Fuyuko Matsui All rights reserved</footer>
+    <footer>
+        <p>© Fuyuko Matsui All rights reserved</p>
+    </footer>
 
 </body>
 </html>
+
+

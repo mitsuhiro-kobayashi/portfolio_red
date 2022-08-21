@@ -1,0 +1,124 @@
+@charset "YTF-8";
+
+/*
+基本設定
+*/
+body {
+    font-family: 'Avenir' , sans-serif;
+    color: #555353;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 7rem;
+    font-weight: normal;
+    line-height: 7rem;
+    margin: 70px 0 0 70px;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #555353;
+}
+
+li {
+    list-style: none;
+}
+/*
+header
+*/
+header {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    width: 40px;
+    text-align: center;
+    margin: 10px;
+    border-bottom: dotted;
+}
+
+nav ul li a {
+    font-size: small;
+}
+nav ul li img {
+    width: 50px;
+    display: block;
+}
+
+.firstview {
+    background-image: url(../img/top.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FAF8F8;
+    background-position: 70%;
+    text-align: left;
+    border-top: solid #E04343;
+    min-height: 500px;
+}
+
+.firstview p {
+    margin: 0 0 0 75px;
+}
+
+#about {
+    background-color: #E04343;
+    color: #F8F5F5;
+}
+
+.about-contents {
+    margin: auto 150px;
+    padding: 30px;
+}
+
+.about-contents img {
+    width: 200px;
+}
+
+.about-icons img {
+    margin-right: 2%;
+    width: 32px;
+}
+
+.projects-cards {
+    display: flex;
+}
+
+.projects-card img {
+    width: 50%;
+    border: 0.1px solid #E04343;
+    padding: 20px 50px 20px 50px;
+}
+
+.projects-links {
+    display: flex;
+    justify-content: center;
+}
+
+.projects-link {
+    background-color: #E04343;
+    color: white;
+    font-size: small;
+    margin: 0;
+}
