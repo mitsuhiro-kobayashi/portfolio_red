@@ -14,13 +14,13 @@ h1 {
     font-size: 7rem;
     font-weight: normal;
     line-height: 7rem;
-    margin: 70px 0 0 70px;
+    margin: 0;
 }
 
 h2 {
     font-size: 3rem;
     font-weight: normal;
-    margin: 0;
+    /* margin: 0; */
 }
 
 h3 {
@@ -45,6 +45,7 @@ header {
 
 nav {
     display: flex;
+    border-bottom: solid #E04343;
 }
 
 nav ul {
@@ -54,41 +55,47 @@ nav ul {
 }
 nav ul li {
     width: 40px;
-    text-align: center;
-    margin: 10px;
-    border-bottom: dotted;
+    margin: 16px;
+    border-bottom: 3px dotted #707070;
 }
 
 nav ul li a {
     font-size: small;
 }
 nav ul li img {
-    width: 50px;
-    display: block;
+    height: 20px;
+    width: auto;
+}
+nav ul li p {
+    margin: 0;
+    font-size: smaller;
 }
 
 .firstview {
     background-image: url(../img/top.png);
-    background-size: contain;
+    background-size: 500px;
     background-repeat: no-repeat;
     background-color: #FAF8F8;
-    background-position: 70%;
+    background-position: right 20% bottom;
     text-align: left;
-    border-top: solid #E04343;
-    min-height: 500px;
+    padding: 50px 0px 150px 75px;
 }
 
 .firstview p {
-    margin: 0 0 0 75px;
+    margin: 0;
+    color: #E04343;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
 }
 
 #about {
     background-color: #E04343;
     color: #F8F5F5;
+    display: inline-block;
+    width: 100%;
 }
 
 .about-contents {
-    margin: auto 150px;
     padding: 30px;
 }
 
@@ -100,15 +107,43 @@ nav ul li img {
     margin-right: 2%;
     width: 32px;
 }
+.about-txt {
+    width: 60%;
+    margin: auto;
+}
+
+#projects h2 {
+    color: #E04343;
+}
+
+#projects img {
+    width: 200px;
+}
 
 .projects-cards {
     display: flex;
+    justify-content: space-around;
+}
+
+.projects-card {
+    width: 33%;
 }
 
 .projects-card img {
-    width: 50%;
+    width: 86%;
     border: 0.1px solid #E04343;
-    padding: 20px 50px 20px 50px;
+    padding: 7%;
+}
+/* 文字の入っていない長方形で、下線を表現する
+疑似要素 */
+.projects-card h3::after {
+    content: '';
+    display: block;
+    width: 33%;
+    height: 3px;
+    background-color: #AAADAE;
+    transform: translate(100%);
+    margin-top: 1rem;
 }
 
 .projects-links {
@@ -120,5 +155,86 @@ nav ul li img {
     background-color: #E04343;
     color: white;
     font-size: small;
-    margin: 0;
+    padding: 8px 16px;
+    margin: 16px;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-card {
+    background-color: #E9EFEF;
+    width: 33%;
+    padding: 20px;
+    border-bottom: 3px solid #E04343;
+    margin-bottom: 100px;
+}
+
+.contact-card img {
+    width: 20%;
+}
+
+.contact-card h3::after {
+    content: '';
+    background-color: #AAADAE;
+    display: block;
+    width: 33%;
+    height: 3px;
+    transform: translate(100%);
+    margin-top: 1rem;
+}
+
+.color-red {
+    color: #E04343;
+}
+
+.contact-card span {
+    border-bottom: dotted #E04343;
+}
+
+.footer {
+    background-color: #E9EFEF;
+    padding: 10px;
+}
+
+
+@media screen and (max-width:767px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    .firstview {
+        background-position: bottom;
+        padding: 0px 0px 500px 0px;
+        width: 100%;
+    }
+
+    .firstview h1 {
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .firstview p {
+        text-align: center;
+    }
+
+    .projects-cards {
+        display: block;
+    }
+    .projects-card {
+        width: 70%;
+        margin: auto;
+    }
+
+    .contact-cards {
+        display: block;
+    }
+
+    .contact-card {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
 }
